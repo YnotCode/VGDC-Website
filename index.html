@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="w3-white">
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/plugin/utc.js"></script>
+    <script src="./script.js"></script>
+    <script type="module" src="/components/bubblebar.js"></script>
+    <script type="module" src="/components/header.js"></script>
+    <script type="module" src="/components/whobox.js"></script>
+    <script type="module" src="/components/nextbox.js"></script>
+    <script type="module" src="/components/interestbox.js"></script>
+    <script type="module" src="/components/bottomNavbar.js"></script>
+    <script type="module" src="/components/gameInfo.js"></script>
+    <script type="module" src="/components/memberProfile.js"></script>
+
+
+    <top-header></top-header>
+    <center>
+      <bubble-bar></bubble-bar>
+    </div>
+    </center>
+
+    <div id="home">
+      <center>
+        <who-box></who-box>
+        <div class="spacing w3-container w3-margin-top w3-margin-bottom"></div>
+        <div class="info-box w3-round w3-container w3-blue slide-in-right">
+          <h2 class="w3-margin-top">Next Meeting:</h2>
+          <h3 id="timed">Wednesday, September 19th</h3>
+          <h5>Room 4202, after school - 4:00 p.m.</h5>
+        </div>
+        <div class="spacing w3-container w3-margin-top w3-margin-bottom"></div>
+        <info-box id="info"></info-box>
+        <div style="height: 20vh"></div>
+      </center>
+    </div>
+    <div id="updates" style="display: none">
+      <center>
+      <h1>Dev.to link here coming soon.</h1>
+      </center>
+    </div>
+    <div id="projects" style="display: none">
+      <center>
+        <game-info title="Murder That Mansion (2020)" description="The mansion is... alive!? Fight your way through a mansion where the household objects are your enemies and try to save those trapped inside. A 2D rogue-like platformer." link="https://hhs-vgddc.itch.io/murder-that-mansion"></game-info>
+
+        <div class="spacing w3-container w3-margin-top w3-margin-bottom"></div>
+
+        <game-info title="Evenfall (2020)" description="A lively game about cooking meals and slaying demons. 3D, Action-Adventure.", link="https://hhs-vgddc.itch.io/evenfall"></game-info>
+
+      
+        <div class="spacing w3-container w3-margin-top w3-margin-bottom"></div>
+
+        <game-info title="Dungeon Flipper (2019)" description="A game about exploring and renovating dungeons!?" link="https://hhs-vgddc.itch.io/dungeon-flipper"></game-info>
+      </center>
+    </div>
+
+    <div id="members" style="display: none">
+      <center>
+        <member-profile name="Anthony Varkey" projects="Murder That Mansion, Medieval Capital, Club Website Development" grade="11" description="Hi, I'm Tony, creator of the website! I've been a part of the club since freshman year. In 2019-2020, I led a team to create Murder That Mansion. I work on mostly programming and video game design, but I also dabble in artwork when no one else is available.Outside of the club I play golf for Huron and participate in other clubs like BPA."></member-profile>
+
+        <member-profile img_link="/assets/ryan.jpg" name="Ryan Ilgen" projects="Murder That Mansion, Medieval Capital" grade="11" description="I doing coding for the club, I also row and play video games. When I can manage I also hike with my family."></member-profile>
+
+        <member-profile name="Jaegun Song" img_link="/assets/jaegun.jpg" projects="Murder That Mansion, Medieval Capital" grade="11" description="Hi! I'm Jaegun. I do art for the art team, help out for the coding team, work on game design/balancing, and generally try to make myself useful. I like to play chess and rhythm games in my free time."></member-profile>
+
+        <member-profile name="Adithya Laakso" projects="Murder That Mansion, Medieval Capital" img_link="/assets/adithya.jpg" description="I have been a member of The VGDDC since my freshman year. For the team I primarily write code and participate in game mechanics discussions. I like to think of myself as the realist on the team. Paying attention to what we can actually accomplish and keeping our ambition within the parameters of reality. I also consider myself to be the purist of the team, attempting to dissuade laziness and sloppiness.Computers are my main hobby. Outside of the club and school, I also program for the Huron Robotics team, contribute to open     source software and make coding side projects by myself and with friends. I am particularly passionate about using computers to interpret language and UNIX-based operating systems. While learning about and programming for computers does take up most of my time, I also play tennis and am on student council. I enjoy reading and writing both fiction and non-fiction (I have a soft-spot for fantasy and speculative fiction). I find television, especially situational comedy and those over-dramatic sci-fi shows     from decades past to be amusing from time to time. I enjoy reading about science because it makes me feel like I am tearing the face off nature and staring at the face of God. I have been called the team's token narcissist. If I call you a bozo, it is not personal."></member-profile>
+
+        <member-profile name="Anthony Young" projects="Project Odyssey" description="I am the lead audio member for the Project Odyssey development team, currently in charge of composing music. My musical background has led me to being interested in making music in the VGDDC in the past, and has served me well ever since." grade="12"></member-profile>
+
+
+        <member-profile name="Philip Baldrich" projects="Murder That Mansion, Medieval Capital" description="I do mostly art. I might end up doing a bit of coding at some point but mostly just art for now." img_link="/assets/philip.jpg" grade="11"></member-profile>
+
+
+        <member-profile name="Raghav" projects="Medieval Capital" grade=""></member-profile>
+
+        <member-profile name="Peter Schwendeman" projects="Project Odyssey" grade="11"></member-profile>
+        <member-profile name="Shane Williams" projects="Project Odyssey" grade="11"></member-profile>
+        <member-profile name="Caitlyn Fong" projects="Project Odyssey" grade="11"></member-profile>
+        <member-profile name="Catherine X. Li" projects="Project Odyssey" grade="11"></member-profile>
+        <member-profile name="David" projects="Project Odyssey" grade="11"></member-profile>
+        <member-profile name="Max" projects="Project Odyssey" grade=""></member-profile>
+      </center>
+    </div>
+
+    <div id="about-us" style="display: none">
+      <center>
+        <div class="w3-container info-box-xl w3-round slide-in-left" style="background-color: #E55934 !important; color: white !important;">
+          <h1>More Information</h1>
+          <h6>We meet Mondays and Wednesdays after school in room 4202.</h6>
+          <h6>Currently, we have two projects in development: <i>Medieval Capital</i> and <i>Project Odyssey</i>. Medieval Capital is a city-building game focused around hiring employees to manage your city. Project Odyssey is an RPG with a unique battle system and fantasy story.</h6>
+          <h6>We use the game engine <i>Unity</i> for development, but we've also used the (arguably better) engine <i>Godot</i> before.</h6>
+
+        </div>
+      </center>
+    </div>
+    
+    <div id="contact" style="display: none">
+      <center>
+        <div class="w3-container info-box-xl w3-round slide-in-right" style="background-color: #7E78D2 !important; color: white !important; text-align: center !important!">
+          <h1>Learn More</h1>
+          <h6>For more information or questions, email <em>anthonyvarkey@gmail.com</em></h6>
+        </div>
+
+        <div class="spacing w3-container w3-margin-top w3-margin-bottom"></div>
+
+        <div class="w3-container info-box w3-round slide-in-left" style="background-color: #7E78D2 !important; color: white !important;">
+          <h1>Club Sponsor Contact</h1>
+          <h6>You can also speak to Mr. Behmer for more information (Room 4202)</h6>
+        </div>
+      </center>
+    </div>
+
+    <div class="w3-container" style="height: 20vh"></div>
+
+    <center>
+    <bottom-navbar></bottom-navbar>
+    </center>
+  </body>
+</html>
