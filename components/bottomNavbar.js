@@ -4,7 +4,7 @@ define({
   tag: "bottom-navbar",
   render: render(function(host){
     return html`
-      <div id="bottomNav" class="w3-container w3-rede">
+      <div id="bottomNav" style="width: 100vw;" class="w3-container w3-rede">
       <div class="w3-cell">
         <button onclick="loadPage('home', this)" class="w3-button scale-in-center"><div><i class="fa fa-home" style="font-size: 30px;"></i></div><div>Home</div></button>
       </div>

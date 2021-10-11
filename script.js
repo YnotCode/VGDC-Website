@@ -64,6 +64,7 @@ function handleUrl(event){
   setTime(document.getElementById("timed"));
 
   var url = window.location.href;
+  console.log("URL: " + url);
   if (url.indexOf("more") != -1){
     loadPage("more", false);
   }
