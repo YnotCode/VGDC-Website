@@ -37,12 +37,16 @@
   left: 0;
 }
 bubble-bar{
-  position: sticky;
+  position: -webkit-sticky;
+  position: sticky !important;
   z-index: 10;
   top: 0;
   left: 0;
 }
-
+#navb{
+  position: fixed;
+  z-index: 10;
+}
 .w3-black{
   background-color:  #81B29A !important;
 }
@@ -100,18 +104,25 @@ justify{
   text-align: left;
   text-justify: inter-word;
 }
+#otro{
+  bottom: 0;
+  position: fixed;
+}
 
 #bottomNav{
-  display: none;
-  width: 100%;
+  visibility: hidden;
+  width: 100vw;
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 10;
 }
 .profileText{
     text-align: left !important;
 }
-
+#spacing{
+  height: 200px;
+}
 @media only screen and (max-width: 500px){
   #navbar{
     display: none;
@@ -133,7 +144,7 @@ justify{
     font-size: medium;
   }
   #bottomNav{
-    display: block;
+    visibility: visible;
   }
 
   #topBar{
@@ -159,6 +170,9 @@ justify{
   }
   .profileText{
     text-align: center !important;
+  }
+  #spacing{
+    height: 75px;
   }
 }
 

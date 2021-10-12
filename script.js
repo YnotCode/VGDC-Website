@@ -52,9 +52,7 @@ function loadPage(pageName, wobble){
       document.getElementById(page).style.display = "block";
     }
   }
-
   window.history.pushState(pageName, pageName, '/#' + pageName);
-
 }
 
 //decide which page to load based on url
